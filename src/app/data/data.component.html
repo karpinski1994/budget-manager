@@ -1,0 +1,17 @@
+<div class="alert alert-dark text-center">
+    <h1>
+        <span class="badge badge-light">Budget available:
+            <br/>{{countTotalBudget() | number : '1.2-2'}}$</span>
+    </h1>
+    <!--Income-->
+    <h3>
+        <span class="badge badge-success">Total incomes: {{totalIncome | number : '1.2-2'}}$</span>
+    </h3>
+    <!--Outcome-->
+    <h3>
+        <span class="badge badge-danger">Total outcomes: {{totalOutcome | number : '1.2-2'}}$
+            <span class="badge badge-dark">{{ countPercentages() | number : '1.2-2'}}%</span>
+        </span>
+    </h3>
+
+</div>

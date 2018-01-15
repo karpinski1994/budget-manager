@@ -1,0 +1,14 @@
+<!--Info-->
+<app-data></app-data>
+<div class="alert alert-primary text-center" role="alert">
+  Sucessfully added money!
+</div>
+<!--Info-END-->
+<div class="operations text-center">
+  <div class="input-group">
+    <input type="text" class="form-control description" placeholder="Description" aria-label="Description" [(ngModel)]="itemDesc">
+    <input type="number" class="form-control value" placeholder="Value" aria-label="Value" [(ngModel)]="itemVal">
+  </div>
+    <button (click)="addIncome(itemDesc, itemVal)" class="btn btn-success" type="button">Income + </button>
+    <button (click)="addOutcome(itemDesc, itemVal)" class="btn btn-danger" type="button">Expense -</button>
+  </div>

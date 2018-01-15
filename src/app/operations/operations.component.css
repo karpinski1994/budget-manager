@@ -1,0 +1,13 @@
+.operations {
+    padding-bottom: 35px;
+}
+.input-group {
+    width: 40%;
+    margin:  0 auto;
+}
+.description {
+    width: 75%;
+}
+.value {
+    width: 25%;
+}

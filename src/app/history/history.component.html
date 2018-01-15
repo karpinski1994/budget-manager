@@ -1,0 +1,21 @@
+<app-data></app-data>
+<div class="row">
+    <div class="col col-lg">
+        <div class="alert alert-success" role="alert">
+            <p>Incomes:</p>
+            <ul>
+                <li *ngFor="let income of incomesList">{{income.name}} {{income.value}} $
+                    <br/>{{income.created | date: 'short'}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col col-lg">
+        <div class="alert alert-danger" role="alert">
+            <p>Expenses:</p>
+            <ul>
+                <li *ngFor="let outcome of outcomesList">{{outcome.name}} {{outcome.value}} $
+                    <br/>{{outcome.created | date: 'short'}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
